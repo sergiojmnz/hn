@@ -13,11 +13,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: okteto/context@2.7.0
+      - uses: okteto/context@latest
         with:
           token: ${{ secrets.OKTETO_TOKEN }}
       - name: Deploy
-        uses: okteto/pipeline@2.7.0
+        uses: okteto/pipeline@latest
         with:
           name: sergionamespace # cambiar por su namespace
           timeout: 5m
