@@ -7,7 +7,7 @@ deploy:
   - kubectl apply -f manifests # create all the resources in Kubernetes
 
 dev:
-  - name: sergiomanespace
+  - name: sergionamespace
     command: bash
     sync:
       - .:/cars
