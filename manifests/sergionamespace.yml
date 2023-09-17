@@ -13,7 +13,7 @@ spec:
         app: adsoftsito
     spec:
       containers:
-      - image: okteto.dev/adsoftsito:latest
+      - image: okteto.dev/sergionamespace:latest
         name: adsoftsito
         envFrom:
         - configMapRef:
