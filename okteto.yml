@@ -1,0 +1,13 @@
+build:
+  sergionamespace:
+    image: okteto.dev/sergionamespace:latest
+
+deploy:
+  - okteto build # build the image with the latest code
+  - kubectl apply -f manifests # create all the resources in Kubernetes
+
+dev:
+  - name: adsoftsito
+    command: bash
+    sync:
+      - .:/cars

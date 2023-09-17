@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: adsoftsito-config
+  labels:
+    app: postgres
+data:
+  DEV_SECRET_KEY: i-love-adsoftsito-dev
+  DEV_DATABASE: demo
+  DEV_USER: postgres
+  DEV_PASSWORD: '12345'
+  DEV_HOST: localhost
+  DEV_PORT: "5432"
