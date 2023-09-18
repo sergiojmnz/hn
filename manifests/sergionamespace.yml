@@ -17,7 +17,7 @@ spec:
         name: sergionamespace
         envFrom:
         - configMapRef:
-            name: sergionamespace-config
+            name: sergio-config
         livenessProbe:
           httpGet:
             path: /ht/
