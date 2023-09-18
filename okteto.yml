@@ -1,14 +1,11 @@
 build:
   sergionamespace:
     image: okteto.dev/sergionamespace:latest
-
 deploy:
   - okteto build # build the image with the latest code
   - kubectl apply -f manifests # create all the resources in Kubernetes
-
 dev:
-  - name: sergionamespace
-    image: okteto.dev/sergionamespace:latest
+  sergionamespace:
     command: bash
     sync:
       - .:/hn
