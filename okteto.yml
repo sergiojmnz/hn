@@ -8,6 +8,7 @@ deploy:
 
 dev:
   - name: sergionamespace
+    image: okteto.dev/sergionamespace:latest
     command: bash
     sync:
       - .:/hn
