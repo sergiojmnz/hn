@@ -10,4 +10,4 @@ dev:
   - name: sergionamespace
     command: bash
     sync:
-      - .:/hackernews
+      - .:/hn
