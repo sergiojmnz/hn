@@ -6,6 +6,8 @@ deploy:
   - kubectl apply -f manifests # create all the resources in Kubernetes
 dev:
   sergionamespace:
+    annotations:
+      dev.okteto.com/auto-ingress: "true"
     command: bash
     sync:
       - .:/hn
